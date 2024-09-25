@@ -5,8 +5,7 @@ h3 {background-color: #f3180c; color: #ede724; font-family: Impact, Haettenschwe
 p {background-color: #0372da; color: #ed2485; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 11px;}
 a:hover {background-color: yellow;}
 a:active {background-color: red;}
-a:link {color: blue}
-a:visited {color: pink}
+a:link a:visited{color: pink}
 
 .feature {color: #ff0000;}
 #footer {color: #666666;}
