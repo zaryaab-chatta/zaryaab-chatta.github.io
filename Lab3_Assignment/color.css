@@ -8,5 +8,3 @@ a:active {background-color: red;}
 a:link a:visited{color: pink}
 table, th, td {border:1px solid black; width: "10%";}
 
-.feature {color: #ff0000;}
-#footer {color: #666666;}
