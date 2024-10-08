@@ -7,12 +7,12 @@ function myFunction(){
     alert("Hello!")
 }
 
-function mOver(some_tag) {
-    some_tag.innerHTML = "Thank You";
-    some_tag.style.color = "blue";
+function mOver(element) {
+    element.innerHTML = "Thank You!";
+    element.style.backgroundColor = "lightblue"; // Changes the background color on hover
 }
 
-function mOut(some_tag) {
-    some_tag.innerHTML = "Mouse Over Me";
-    some_tag.style.color = "orange";
+function mOut(element) {
+    element.innerHTML = "Mouse Over Here";
+    element.style.backgroundColor = "white"; // Resets background color when mouse is out
 }
