@@ -61,8 +61,3 @@ body {
 .dropdown-menu li a:hover {
     background-color: #575757;
 }
-
-/* Make sure that the dropdown is displayed properly */
-.nav-item.dropdown:hover .dropdown-menu {
-    display: block;
-}
