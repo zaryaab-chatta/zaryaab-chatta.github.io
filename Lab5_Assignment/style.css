@@ -36,8 +36,7 @@ body {
 }
 
 .dropdown-menu {
-    visibility: hidden; /* Initially hidden */
-    opacity: 0;
+    display: none; /* Hidden by default */
     position: absolute;
     background-color: #333;
     min-width: 160px;
@@ -45,7 +44,6 @@ body {
     top: 100%; /* Position just below the main nav item */
     left: 0;
     border: 1px solid #444;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .dropdown-menu li {
