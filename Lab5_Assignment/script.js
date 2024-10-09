@@ -10,30 +10,32 @@ function promptForName() {
     }
 }
 
-
-// Function to toggle dropdown menu on click
 document.addEventListener('DOMContentLoaded', function() {
     const dropdownToggle = document.querySelector('.dropdown-toggle');
     const dropdownMenu = document.querySelector('.dropdown-menu');
 
+    // Toggle the dropdown menu when the Services link is clicked
     dropdownToggle.addEventListener('click', function(event) {
-        event.preventDefault(); // Prevents the default anchor link behavior
-        // Toggle the display of the dropdown menu
-        if (dropdownMenu.style.display === 'block') {
-            dropdownMenu.style.display = 'none';
+        event.preventDefault(); // Prevent default anchor link behavior
+
+        // Toggle dropdown visibility and opacity
+        if (dropdownMenu.style.visibility === 'visible') {
+            dropdownMenu.style.visibility = 'hidden';
+            dropdownMenu.style.opacity = '0';
         } else {
-            dropdownMenu.style.display = 'block';
+            dropdownMenu.style.visibility = 'visible';
+            dropdownMenu.style.opacity = '1';
         }
     });
 
-    // Optional: Close dropdown if clicking outside of it
+    // Close the dropdown if clicking outside of it
     document.addEventListener('click', function(event) {
         if (!dropdownToggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
-            dropdownMenu.style.display = 'none';
+            dropdownMenu.style.visibility = 'hidden';
+            dropdownMenu.style.opacity = '0';
         }
     });
 });
-
 
 
 
