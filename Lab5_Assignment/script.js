@@ -10,25 +10,32 @@ function promptForName() {
     }
 }
 
-// Hover effect for navigation items
-function hoverNav(item) {
-    item.style.backgroundColor = '#444'; // Darker color on hover
-}
 
-function unhoverNav(item) {
-    item.style.backgroundColor = ''; // Revert back to original background
-}
+// Function to toggle dropdown menu on click
+document.addEventListener('DOMContentLoaded', function() {
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
 
-// Show and hide the dropdown menu
-function showMenu(item) {
-    let dropdown = item.querySelector('.dropdown-menu');
-    dropdown.style.display = 'block'; // Show dropdown menu
-}
+    dropdownToggle.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevents the default anchor link behavior
+        // Toggle the display of the dropdown menu
+        if (dropdownMenu.style.display === 'block') {
+            dropdownMenu.style.display = 'none';
+        } else {
+            dropdownMenu.style.display = 'block';
+        }
+    });
 
-function hideMenu(item) {
-    let dropdown = item.querySelector('.dropdown-menu');
-    dropdown.style.display = 'none'; // Hide dropdown menu
-}
+    // Optional: Close dropdown if clicking outside of it
+    document.addEventListener('click', function(event) {
+        if (!dropdownToggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
+            dropdownMenu.style.display = 'none';
+        }
+    });
+});
+
+
+
 
 // Select the image by its ID
 const image = document.getElementById('clickable-image');
