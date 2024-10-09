@@ -41,6 +41,9 @@ body {
     background-color: #333;
     min-width: 160px;
     z-index: 1;
+    top: 100%; /* Position just below the main nav item */
+    left: 0;
+    border: 1px solid #444;
 }
 
 .dropdown-menu li {
@@ -57,4 +60,9 @@ body {
 
 .dropdown-menu li a:hover {
     background-color: #575757;
+}
+
+/* Make sure that the dropdown is displayed properly */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
 }
