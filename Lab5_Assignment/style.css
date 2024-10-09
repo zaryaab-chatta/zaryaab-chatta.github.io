@@ -1,63 +1,38 @@
-/* General Styles for Navigation */
-body {
-    font-family: Arial, sans-serif;
-}
-
-.navbar {
-    background-color: #333;
-    overflow: hidden;
-}
-
-.nav-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-item {
-    float: left;
-}
-
-.nav-item a {
-    display: block;
+.dropbtn {
+    background-color: #3498DB;
     color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-}
-
-.nav-item a:hover {
-    background-color: #575757;
-}
-
-/* Dropdown Menu */
-.dropdown {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  .dropdown {
     position: relative;
-}
-
-.dropdown-menu {
-    display: none; /* Hidden by default */
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
     position: absolute;
-    background-color: #333;
+    background-color: #f1f1f1;
     min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    top: 100%; /* Position just below the main nav item */
-    left: 0;
-    border: 1px solid #444;
-}
-
-.dropdown-menu li {
-    float: none;
-}
-
-.dropdown-menu li a {
+  }
+  
+  .dropdown-content a {
+    color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    color: white;
-    text-align: left;
-}
-
-.dropdown-menu li a:hover {
-    background-color: #575757;
-}
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}

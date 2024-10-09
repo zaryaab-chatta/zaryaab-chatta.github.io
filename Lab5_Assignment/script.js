@@ -1,36 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-    console.log("Script loaded");
-
-    const dropdownToggle = document.querySelector('.dropdown-toggle');
-    const dropdownMenu = document.querySelector('.dropdown-menu');
-
-    if (!dropdownToggle || !dropdownMenu) {
-        console.error('Dropdown elements not found');
-        return;
-    }
-
-    // Toggle the dropdown menu when the Services link is clicked
-    dropdownToggle.addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent default anchor link behavior
-        console.log("Dropdown clicked");
-
-        // Toggle dropdown visibility
-        if (dropdownMenu.style.display === 'block') {
-            dropdownMenu.style.display = 'none';
-        } else {
-            dropdownMenu.style.display = 'block';
-        }
-    });
-
-    // Close the dropdown if clicking outside of it
-    document.addEventListener('click', function(event) {
-        if (!dropdownToggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
-            dropdownMenu.style.display = 'none';
-        }
-    });
-});
-
-
 // Function to prompt the user for their name and display it
 function promptForName() {
     let userName = prompt("Please enter your name:");
@@ -44,8 +11,29 @@ function promptForName() {
 }
 
 
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
 
 
+
+  
 // Select the image by its ID
 const image = document.getElementById('clickable-image');
 
