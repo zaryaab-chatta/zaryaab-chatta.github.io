@@ -6,17 +6,21 @@ document.getElementById("contactForm").onsubmit = function(event) {
     // Get the values from the form elements
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
     const subject = document.getElementById("subject").value;
     const message = document.getElementById("message").value;
     const contactMethod = document.querySelector('input[name="contact-method"]:checked') ? document.querySelector('input[name="contact-method"]:checked').value : '';
+    const reason = document.getElementById("reason").value;
     const newsletter = document.querySelector('input[name="newsletter"]:checked') ? 'Yes' : 'No';
 
     // Store values in localStorage
     localStorage.setItem("name", name);
     localStorage.setItem("email", email);
+    localStorage.setItem("phone", phone);
     localStorage.setItem("subject", subject);
     localStorage.setItem("message", message);
     localStorage.setItem("contactMethod", contactMethod);
+    localStorage.setItem("reason", reason);
     localStorage.setItem("newsletter", newsletter);
 
     // Display a success message

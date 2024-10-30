@@ -31,6 +31,10 @@
                 <input id="email" type="email" name="email" required>
             </p>
             <p>
+                <label for="phone">Phone Number:</label>
+                <input id="phone" type="tel" name="phone">
+            </p>
+            <p>
                 <label for="subject">Subject:</label>
                 <input id="subject" type="text" name="subject" required>
             </p>
@@ -42,6 +46,15 @@
                 <label for="contact-method">Preferred Contact Method:</label>
                 <input type="radio" name="contact-method" value="email"> Email
                 <input type="radio" name="contact-method" value="phone"> Phone
+            </p>
+            <p>
+                <label for="reason">Reason for Contact:</label>
+                <select id="reason" name="reason">
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Customer Support</option>
+                    <option value="services">Services Inquiry</option>
+                    <option value="other">Other</option>
+                </select>
             </p>
             <p>
                 <label for="newsletter">Subscribe to Newsletter:</label>
