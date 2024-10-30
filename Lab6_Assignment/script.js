@@ -3,35 +3,60 @@ document.getElementById("contactForm").onsubmit = function(event) {
     // Prevent form from refreshing the page
     event.preventDefault();
 
-    // Get the values from the form elements
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const phone = document.getElementById("phone").value;
-    const subject = document.getElementById("subject").value;
-    const message = document.getElementById("message").value;
-    const contactMethod = document.querySelector('input[name="contact-method"]:checked') ? document.querySelector('input[name="contact-method"]:checked').value : '';
-    const reason = document.getElementById("reason").value;
-    const newsletter = document.querySelector('input[name="newsletter"]:checked') ? 'Yes' : 'No';
+    // Retrieve previous submissions from localStorage (if any)
+    let submissions = JSON.parse(localStorage.getItem("submissions")) || [];
 
-    // Store values in localStorage
-    localStorage.setItem("name", name);
-    localStorage.setItem("email", email);
-    localStorage.setItem("phone", phone);
-    localStorage.setItem("subject", subject);
-    localStorage.setItem("message", message);
-    localStorage.setItem("contactMethod", contactMethod);
-    localStorage.setItem("reason", reason);
-    localStorage.setItem("newsletter", newsletter);
+    // Get the current form values
+    const submission = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value,
+        contactMethod: document.querySelector('input[name="contact-method"]:checked') ? document.querySelector('input[name="contact-method"]:checked').value : '',
+        reason: document.getElementById("reason").value,
+        newsletter: document.querySelector('input[name="newsletter"]:checked') ? 'Yes' : 'No'
+    };
+
+    // Add the new submission to the array
+    submissions.push(submission);
+
+    // Store the updated submissions array in localStorage
+    localStorage.setItem("submissions", JSON.stringify(submissions));
 
     // Display a success message
     alert("Thank you for contacting us! Your message has been stored.");
 };
 
-// This function handles the reset button action
-document.getElementById("contactForm").onreset = function() {
-    // Clear the localStorage values (if desired)
-    localStorage.clear();
+// This function retrieves and displays all stored form submissions
+function displayStoredData() {
+    // Retrieve the submissions array from localStorage
+    let submissions = JSON.parse(localStorage.getItem("submissions")) || [];
 
-    // Display a message to indicate form has been reset
-    alert("Form has been reset and data cleared.");
+    // Initialize an empty string to hold all the data
+    let data = '';
+
+    // Loop through each submission and build the display string
+    submissions.forEach((submission, index) => {
+        data += `
+            <h3>Submission ${index + 1}:</h3>
+            <strong>Name:</strong> ${submission.name} <br>
+            <strong>Email:</strong> ${submission.email} <br>
+            <strong>Phone:</strong> ${submission.phone} <br>
+            <strong>Subject:</strong> ${submission.subject} <br>
+            <strong>Message:</strong> ${submission.message} <br>
+            <strong>Preferred Contact Method:</strong> ${submission.contactMethod} <br>
+            <strong>Reason for Contact:</strong> ${submission.reason} <br>
+            <strong>Newsletter Subscription:</strong> ${submission.newsletter} <br>
+            <hr>
+        `;
+    });
+
+    // Display the data inside the webpage element
+    document.getElementById("storedData").innerHTML = data;
+}
+
+// Call the function to display stored data when the page loads
+window.onload = function() {
+    displayStoredData();
 };
