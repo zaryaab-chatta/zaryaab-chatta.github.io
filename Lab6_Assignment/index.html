@@ -52,13 +52,11 @@
                 <label for="reason">Reason for Contact:</label>
                 <select id="reason" name="reason">
                     <option value="general">General Inquiry</option>
-                    <option value="support">Customer Support</option>
-                    <option value="services">Services Inquiry</option>
-                    <option value="other">Other</option>
+                    <option value="job">Job Offer</option>
                 </select>
             </p>
             <p>
-                <label for="newsletter">Subscribe to Newsletter:</label>
+                <label for="newsletter">Subscribe to Portfolio Updates:</label>
                 <input type="checkbox" name="newsletter" value="yes"> Yes, I want to receive updates
             </p>
             <p>
@@ -76,7 +74,7 @@
     <script>
         // This function handles form submission for the contact form
         document.getElementById("contactForm").onsubmit = function(event) {
-            // Prevent form from refreshing the page
+            // Prevent the form from refreshing the page
             event.preventDefault();
 
             // Retrieve previous submissions from localStorage (if any)
