@@ -8,39 +8,40 @@
 /* General styling */
 html, body {
     height: 100%;
-    font-family: 'Merriweather', serif; /* Default font for body text */
+    font-family: 'Merriweather', serif;
     line-height: 1.6;
-    background-color: #f0f8ff; /* Light blue background */
+    background-color: #f0f8ff;
     color: #333;
     display: flex;
     flex-direction: column;
 }
 
+/* Header */
 header {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: #0044cc; /* Dark blue background for header */
+    background: linear-gradient(135deg, #0044cc, #007bff);
     color: white;
-    position: fixed; /* Keeps header fixed at the top */
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%; /* Full width */
-    z-index: 1000; /* Ensures the header appears above other content */
-    min-height: 100px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    width: 100%;
+    z-index: 1000;
+    min-height: 120px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border-bottom: 4px solid #003399;
 }
 
 .logo img {
-    max-width: 80px; /* Smaller width to fit within the header */
-    max-height: 80px; /* Constrain logo height */
+    max-width: 80px;
+    max-height: 80px;
     position: absolute;
-    left: 20px; /* Adjust logo positioning */
+    left: 20px;
     top: 50%;
-    transform: translateY(-50%); /* Center vertically in header */
+    transform: translateY(-50%);
 }
-
 
 nav ul {
     list-style: none;
@@ -53,35 +54,36 @@ nav a {
     text-decoration: none;
     font-size: 1.2em;
     font-weight: bold;
-    padding: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 12px 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 nav a:hover {
-    background-color: #0055ff;
-    color: #f0f8ff;
-    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #0044cc;
+    transform: scale(1.05);
 }
 
 /* Main content area */
 main {
     flex: 1;
-    padding: 140px 20px 20px; /* Top padding to prevent content from hiding behind the fixed header */
+    padding: 160px 20px 20px;
 }
 
 .featured-articles, .featured-videos {
     margin-bottom: 40px;
-    font-family: 'Merriweather', serif; /* Serif for article/video body */
+    font-family: 'Merriweather', serif;
 }
 
 .featured-articles h1, .featured-videos h1 {
     font-size: 2em;
     margin-bottom: 20px;
     color: #0044cc;
-    font-family: 'Merriweather Sans', sans-serif; /* Sans-serif for section titles */
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
-/* Grid layout for featured articles and videos */
 .articles-grid, .videos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -105,21 +107,42 @@ article h2, .video h2 {
     font-size: 1.5em;
     color: #0044cc;
     margin: 10px 0;
-    font-family: 'Merriweather Sans', sans-serif; /* Sans-serif for article/video titles */
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 article p, .video p {
     font-size: 0.9em;
     color: #333;
-    font-family: 'Merriweather', serif; /* Serif for paragraph text */
 }
 
 /* Footer styling */
 footer {
-    background-color: #0044cc;
+    background: linear-gradient(135deg, #0044cc, #003399);
     color: white;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-    font-family: 'Merriweather Sans', sans-serif; /* Sans-serif for footer */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+footer .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer .social-media a {
+    color: white;
+    font-size: 1.2em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer .social-media a:hover {
+    color: #007bff;
+    transform: translateY(-3px);
 }
