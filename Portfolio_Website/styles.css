@@ -24,15 +24,18 @@ header {
     background-color: #0044cc; /* Dark blue background for header */
     color: white;
     position: relative;
-    font-family: 'Merriweather Sans', sans-serif; /* Sans-serif for header */
+    min-height: 100px; /* Increased header height to fit the logo */
 }
 
 .logo img {
-    max-width: 100px;
+    max-width: 80px; /* Smaller width to fit within the header */
+    max-height: 80px; /* Constrain logo height */
     position: absolute;
-    left: 20px;
-    top: 20px;
+    left: 20px; /* Adjust logo positioning */
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically in header */
 }
+
 
 nav ul {
     list-style: none;
