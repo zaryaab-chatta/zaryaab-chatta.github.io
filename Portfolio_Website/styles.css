@@ -8,7 +8,7 @@
 /* General styling */
 html, body {
     height: 100%;
-    font-family: Arial, sans-serif;
+    font-family: 'Merriweather', serif; /* Default font for body text */
     line-height: 1.6;
     background-color: #f0f8ff; /* Light blue background */
     color: #333;
@@ -18,18 +18,19 @@ html, body {
 
 header {
     display: flex;
-    justify-content: center; /* Center the navigation links */
+    justify-content: center;
     align-items: center;
     padding: 20px;
     background-color: #0044cc; /* Dark blue background for header */
     color: white;
     position: relative;
+    font-family: 'Merriweather Sans', sans-serif; /* Sans-serif for header */
 }
 
 .logo img {
     max-width: 100px;
     position: absolute;
-    left: 20px; /* Adjust logo positioning */
+    left: 20px;
     top: 20px;
 }
 
@@ -42,15 +43,15 @@ nav ul {
 nav a {
     color: white;
     text-decoration: none;
-    font-size: 1.2em; /* Larger font size */
+    font-size: 1.2em;
     font-weight: bold;
     padding: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover {
-    background-color: #0055ff; /* Slightly lighter blue on hover */
-    color: #f0f8ff; /* Light blue text on hover */
+    background-color: #0055ff;
+    color: #f0f8ff;
     border-radius: 5px;
 }
 
@@ -62,12 +63,14 @@ main {
 
 .featured-articles, .featured-videos {
     margin-bottom: 40px;
+    font-family: 'Merriweather', serif; /* Serif for article/video body */
 }
 
 .featured-articles h1, .featured-videos h1 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #0044cc; /* Dark blue for section titles */
+    color: #0044cc;
+    font-family: 'Merriweather Sans', sans-serif; /* Sans-serif for section titles */
 }
 
 /* Grid layout for featured articles and videos */
@@ -78,10 +81,10 @@ main {
 }
 
 article, .video {
-    background: white; /* White background for articles and videos */
+    background: white;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -94,18 +97,21 @@ article h2, .video h2 {
     font-size: 1.5em;
     color: #0044cc;
     margin: 10px 0;
+    font-family: 'Merriweather Sans', sans-serif; /* Sans-serif for article/video titles */
 }
 
 article p, .video p {
     font-size: 0.9em;
     color: #333;
+    font-family: 'Merriweather', serif; /* Serif for paragraph text */
 }
 
 /* Footer styling */
 footer {
-    background-color: #0044cc; /* Dark blue for footer */
+    background-color: #0044cc;
     color: white;
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
+    font-family: 'Merriweather Sans', sans-serif; /* Sans-serif for footer */
 }
