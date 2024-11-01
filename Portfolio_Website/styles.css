@@ -6,11 +6,14 @@
 }
 
 /* General styling */
-body {
+html, body {
+    height: 100%;
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f0f8ff; /* Light blue background */
     color: #333;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -20,6 +23,7 @@ header {
     padding: 20px;
     background-color: #0044cc; /* Dark blue background for header */
     color: white;
+    position: relative;
 }
 
 .logo img {
@@ -50,43 +54,49 @@ nav a:hover {
     border-radius: 5px;
 }
 
-/* Main section for featured articles */
+/* Main content area */
 main {
+    flex: 1;
     padding: 20px;
 }
 
-.featured-articles h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #0044cc; /* Dark blue for section title */
+.featured-articles, .featured-videos {
+    margin-bottom: 40px;
 }
 
-.articles-grid {
+.featured-articles h1, .featured-videos h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #0044cc; /* Dark blue for section titles */
+}
+
+/* Grid layout for featured articles and videos */
+.articles-grid, .videos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
 }
 
-article {
-    background: white; /* White background for articles */
+article, .video {
+    background: white; /* White background for articles and videos */
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
     text-align: center;
 }
 
-article img {
+article img, .video img {
     max-width: 100%;
     border-radius: 8px;
 }
 
-article h2 {
+article h2, .video h2 {
     font-size: 1.5em;
     color: #0044cc;
     margin: 10px 0;
 }
 
-article p {
+article p, .video p {
     font-size: 0.9em;
     color: #333;
 }
