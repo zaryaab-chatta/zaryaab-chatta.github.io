@@ -9,31 +9,45 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333;
 }
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Center the navigation links */
     align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
+    padding: 20px;
+    background-color: #0044cc; /* Dark blue background for header */
     color: white;
 }
 
 .logo img {
     max-width: 100px;
+    position: absolute;
+    left: 20px; /* Adjust logo positioning */
+    top: 20px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 25px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
+    font-size: 1.2em; /* Larger font size */
     font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+nav a:hover {
+    background-color: #0055ff; /* Slightly lighter blue on hover */
+    color: #f0f8ff; /* Light blue text on hover */
+    border-radius: 5px;
 }
 
 /* Main section for featured articles */
@@ -44,6 +58,7 @@ main {
 .featured-articles h1 {
     font-size: 2em;
     margin-bottom: 20px;
+    color: #0044cc; /* Dark blue for section title */
 }
 
 .articles-grid {
@@ -53,9 +68,10 @@ main {
 }
 
 article {
-    background: #f4f4f4;
+    background: white; /* White background for articles */
     padding: 15px;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
     text-align: center;
 }
 
@@ -66,16 +82,18 @@ article img {
 
 article h2 {
     font-size: 1.5em;
+    color: #0044cc;
     margin: 10px 0;
 }
 
 article p {
     font-size: 0.9em;
+    color: #333;
 }
 
 /* Footer styling */
 footer {
-    background-color: #333;
+    background-color: #0044cc; /* Dark blue for footer */
     color: white;
     text-align: center;
     padding: 10px 0;
