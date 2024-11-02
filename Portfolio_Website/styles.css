@@ -55,15 +55,15 @@ nav a {
     font-size: 1.2em;
     font-weight: bold;
     padding: 12px 20px;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.2); /* Translucent background for links */
+    border-radius: 8px; /* Rounded corners for buttons */
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 nav a:hover {
     background-color: rgba(255, 255, 255, 0.4);
-    color: #0044cc;
-    transform: scale(1.05);
+    color: #0044cc; /* Color shift on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
 }
 
 /* Main content area */
