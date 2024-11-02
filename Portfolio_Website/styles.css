@@ -8,7 +8,7 @@
 /* General styling */
 html, body {
     height: 100%;
-    font-family: Arial, sans-serif;
+    font-family: 'Merriweather', serif; /* Default font for body text */
     line-height: 1.6;
     background-color: #f0f8ff; /* Light blue background */
     color: #333;
@@ -18,19 +18,28 @@ html, body {
 
 header {
     display: flex;
-    justify-content: center; /* Center the navigation links */
+    justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: #0044cc; /* Dark blue background for header */
+    background: linear-gradient(135deg, #0044cc, #007bff); /* Gradient for a unique look */
     color: white;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    min-height: 120px; /* Slightly taller header for visibility */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+    border-bottom: 4px solid #003399; /* Adds a contrasting bottom border */
 }
 
 .logo img {
-    max-width: 100px;
+    max-width: 80px;
+    max-height: 80px;
     position: absolute;
-    left: 20px; /* Adjust logo positioning */
-    top: 20px;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 nav ul {
@@ -42,32 +51,36 @@ nav ul {
 nav a {
     color: white;
     text-decoration: none;
-    font-size: 1.2em; /* Larger font size */
+    font-size: 1.2em;
     font-weight: bold;
-    padding: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+    padding: 12px 20px;
+    background-color: rgba(255, 255, 255, 0.2); /* Translucent background for links */
+    border-radius: 8px; /* Rounded corners for buttons */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 nav a:hover {
-    background-color: #0055ff; /* Slightly lighter blue on hover */
-    color: #f0f8ff; /* Light blue text on hover */
-    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #0044cc; /* Color shift on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
 /* Main content area */
 main {
     flex: 1;
-    padding: 20px;
+    padding: 160px 20px 20px; /* Top padding adjusted for taller header */
 }
 
 .featured-articles, .featured-videos {
     margin-bottom: 40px;
+    font-family: 'Merriweather', serif; /* Serif for article/video body */
 }
 
 .featured-articles h1, .featured-videos h1 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #0044cc; /* Dark blue for section titles */
+    color: #0044cc;
+    font-family: 'Merriweather Sans', sans-serif; /* Sans-serif for section titles */
 }
 
 /* Grid layout for featured articles and videos */
@@ -78,10 +91,10 @@ main {
 }
 
 article, .video {
-    background: white; /* White background for articles and videos */
+    background: white;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -94,18 +107,44 @@ article h2, .video h2 {
     font-size: 1.5em;
     color: #0044cc;
     margin: 10px 0;
+    font-family: 'Merriweather Sans', sans-serif; /* Sans-serif for article/video titles */
 }
 
 article p, .video p {
     font-size: 0.9em;
     color: #333;
+    font-family: 'Merriweather', serif; /* Serif for paragraph text */
 }
 
-/* Footer styling */
+/* Footer */
 footer {
-    background-color: #0044cc; /* Dark blue for footer */
+    background-color: #0044cc;
+    background: linear-gradient(135deg, #0044cc, #003399); /* Gradient to match header style */
     color: white;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+footer .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer .social-media a {
+    color: white;
+    font-size: 1.5em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer .social-media a:hover {
+    color: #007bff; /* Lighter blue on hover */
+    transform: translateY(-3px); /* Raise slightly on hover */
 }
