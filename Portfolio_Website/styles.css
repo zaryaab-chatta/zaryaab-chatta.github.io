@@ -63,7 +63,7 @@ nav a {
 nav a:hover {
     background-color: rgba(255, 255, 255, 0.4);
     color: #0044cc; /* Color shift on hover */
-    transform: scale(1.05); /* Slight zoom effect on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
 }
 
 /* Main content area */
