@@ -110,7 +110,7 @@ main {
     width: 80%; /* Takes up most of the width */
     max-width: 800px; /* Limits maximum width for readability */
     padding: 20px;
-    margin-bottom: 100px; /* Increased gap between each article */
+    margin-bottom: 400px; /* Increased gap between each article */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
