@@ -149,3 +149,58 @@ footer .social-media a:hover {
     color: #007bff; /* Lighter blue on hover */
     transform: translateY(-3px); /* Raise slightly on hover */
 }
+
+/* Article.html Section */
+.articles-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* Article Preview */
+.article-preview {
+    background-color: white;
+    width: 80%; /* Takes up most of the width */
+    max-width: 800px; /* Limits maximum width for readability */
+    padding: 20px;
+    margin-bottom: 100px; /* Adds gap between each article */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.article-preview:hover {
+    transform: translateY(-5px); /* Adds a slight lift on hover */
+}
+
+.article-preview h2 {
+    color: #0044cc;
+    font-size: 1.8em;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.article-preview p {
+    color: #333;
+    font-size: 1em;
+    margin: 15px 0;
+    font-family: 'Merriweather', serif;
+}
+
+.read-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0044cc;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.read-more-button:hover {
+    background-color: #007bff;
+    transform: translateY(-2px); /* Adds a slight lift on hover */
+}
