@@ -18,7 +18,7 @@ html, body {
     flex-direction: column;
 }
 
-/* Header */
+/* Header Background*/
 header {
     display: flex;
     justify-content: center;
@@ -56,11 +56,11 @@ nav a {
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
-/* Hover Effect */
+/* Nav Items Mouse Hover Effect */
 nav a:hover {
     background-color: white; /* Change background to a lighter blue */
     color: #0044cc; /* Text color remains white */
-    transform: translateY(-3px); /* Slight lift on hover */
+    transform: translateY(30px); /* Slight lift on hover */
 }
 
 /* Logo */
