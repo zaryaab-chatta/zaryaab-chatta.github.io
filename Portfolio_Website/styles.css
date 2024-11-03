@@ -1,3 +1,5 @@
+/* General Shared Styles across all pages */
+
 /* Remove Default Styling */
 * {
     margin: 0;
@@ -5,7 +7,7 @@
     box-sizing: border-box;
 }
 
-/* General styling */
+/* Main Body Styling */
 html, body {
     height: 100%;
     font-family: 'Merriweather', serif; /* Default font for body text */
@@ -63,69 +65,6 @@ nav a {
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
-/* Name Section */
-.name-title {
-    text-align: center;
-}
-
-.name-title h1 {
-    font-size: 3em; /* Large font size for emphasis */
-    font-weight: bold;
-    color: #0044cc; /* Matches the theme color */
-    font-family: 'Merriweather Sans', sans-serif; /* Sans-serif style */
-}
-
-/* Main content area */
-main {
-    flex: 1;
-    padding: 160px 20px 20px; /* Top padding adjusted for taller header */
-}
-
-.featured-articles, .featured-videos {
-    margin-bottom: 40px;
-    font-family: 'Merriweather', serif; /* Serif for article/video body */
-}
-
-.featured-articles h1, .featured-videos h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #0044cc;
-    font-family: 'Merriweather Sans', sans-serif; /* Sans-serif for section titles */
-}
-
-/* Grid layout for featured articles and videos */
-.articles-grid, .videos-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-}
-
-article, .video {
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-article img, .video img {
-    max-width: 100%;
-    border-radius: 8px;
-}
-
-article h2, .video h2 {
-    font-size: 1.5em;
-    color: #0044cc;
-    margin: 10px 0;
-    font-family: 'Merriweather Sans', sans-serif; /* Sans-serif for article/video titles */
-}
-
-article p, .video p {
-    font-size: 0.9em;
-    color: #333;
-    font-family: 'Merriweather', serif; /* Serif for paragraph text */
-}
-
 /* Footer */
 footer {
     background-color: #0044cc;
@@ -157,85 +96,4 @@ footer .social-media a {
 footer .social-media a:hover {
     color: #007bff; /* Lighter blue on hover */
     transform: translateY(-3px); /* Raise slightly on hover */
-}
-
-/* Article.html Section */
-.articles-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    padding: 20px;
-}
-
-/* Article Preview */
-.article-preview {
-    background-color: white;
-    width: 80%; /* Takes up most of the width */
-    max-width: 800px; /* Limits maximum width for readability */
-    padding: 20px;
-    margin-bottom: 10px; /* Adds gap between each article */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.article-preview:hover {
-    transform: translateY(-5px); /* Adds a slight lift on hover */
-}
-
-.article-preview h2 {
-    color: #0044cc;
-    font-size: 1.8em;
-    font-family: 'Merriweather Sans', sans-serif;
-}
-
-.article-preview p {
-    color: #333;
-    font-size: 1em;
-    margin: 15px 0;
-    font-family: 'Merriweather', serif;
-}
-
-.read-more-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #0044cc;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1em;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.read-more-button:hover {
-    background-color: #007bff;
-    transform: translateY(-2px); /* Adds a slight lift on hover */
-}
-
-/* Under Construction Page Styles */
-.construction-page {
-    text-align: center;
-    padding: 80px 20px;
-    font-family: 'Merriweather', serif;
-    color: #2b7a78; /* Primary theme color */
-}
-
-.construction-page h1 {
-    font-size: 2.5em;
-    color: #2b7a78;
-    margin-bottom: 20px;
-}
-
-.construction-page p {
-    font-size: 1.2em;
-    color: #333;
-    margin-bottom: 30px;
-}
-
-.construction-icon {
-    font-size: 4em;
-    margin: 20px 0;
-    color: #2b7a78;
 }
