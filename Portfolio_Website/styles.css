@@ -36,15 +36,6 @@ header {
     border-bottom: 4px solid #003399; /* Adds a contrasting bottom border */
 }
 
-.logo img {
-    max-width: 80px;
-    max-height: 80px;
-    position: absolute;
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
 /* Header Navigation Links */
 nav ul {
     list-style: none;
@@ -63,6 +54,23 @@ nav a {
     background-color: rgba(255, 255, 255, 0.2); /* Translucent background for links */
     border-radius: 8px; /* Rounded corners for buttons */
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect */
+nav a:hover {
+    background-color: #007bff; /* Change background to a lighter blue */
+    color: white; /* Text color remains white */
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+
+/* Logo */
+.logo img {
+    max-width: 80px;
+    max-height: 80px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /* Main content area */
