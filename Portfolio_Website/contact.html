@@ -2,19 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Contact Form</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Merriweather+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-  <!-- 
-        The “Submit” button stores the input data into local storage by collecting the values
-        from the form fields and saving them as an array in local storage. 
-        The “Clear” button resets all input fields in the form to their default values.
-    -->
 <body>
+    <!-- Header with Logo and Navigation -->
     <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo">
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -67,12 +72,15 @@
         </form>
     </main>
 
+    <!-- Footer -->
     <footer>
-        <div><small>Copyright &copy; 2024 Zaryaab Chatta</small></div>
+        <p>&copy; 2024 My Portfolio</p>
+        <p>Follow me on social media</p>
+        <div class="social-media">
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </div>
     </footer>
-
-    <!-- Link both JavaScript files -->
-    <script src="formSubmit.js"></script>
-    <script src="formReset.js"></script>
 </body>
 </html>
