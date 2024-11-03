@@ -1,0 +1,31 @@
+/* Articles Section */
+.articles-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* Article Preview */
+.article-preview {
+    background-color: white;
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.article-preview:hover {
+    transform: translateY(-5px);
+}
+
+.article-preview h2 {
+    color: #0044cc;
+    font-size: 1.8em;
+    font-family: 'Merriweather Sans', sans-serif;
+}
