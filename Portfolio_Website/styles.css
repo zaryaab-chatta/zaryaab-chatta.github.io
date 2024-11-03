@@ -65,6 +65,12 @@ nav a {
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
+/* Main content area */
+main {
+    flex: 1;
+    padding: 160px 20px 20px; /* Top padding adjusted for taller header */
+}
+
 /* Footer */
 footer {
     background-color: #0044cc;
