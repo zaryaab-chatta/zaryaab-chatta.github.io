@@ -10,7 +10,6 @@
     font-family: 'Merriweather Sans', sans-serif;
 }
 
-/* Featured Articles and Videos Section */
 .featured-articles, .featured-videos {
     margin-bottom: 40px;
     font-family: 'Merriweather', serif; /* Serif for article/video body */
@@ -20,10 +19,10 @@
     font-size: 2em;
     margin-bottom: 20px;
     color: #0044cc;
-    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif; /* Sans-serif for section titles */
 }
 
-/* Grid layout */
+/* Grid layout for featured articles and videos */
 .articles-grid, .videos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
