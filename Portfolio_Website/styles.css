@@ -58,8 +58,8 @@ nav a {
 
 /* Hover Effect */
 nav a:hover {
-    background-color: #007bff; /* Change background to a lighter blue */
-    color: white; /* Text color remains white */
+    background-color: white; /* Change background to a lighter blue */
+    color: #0044cc; /* Text color remains white */
     transform: translateY(-3px); /* Slight lift on hover */
 }
 
