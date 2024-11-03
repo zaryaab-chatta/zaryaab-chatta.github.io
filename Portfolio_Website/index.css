@@ -1,0 +1,38 @@
+/* Name Section */
+.name-title {
+    text-align: center;
+}
+
+.name-title h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #0044cc;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+/* Featured Articles and Videos Section */
+.featured-articles, .featured-videos {
+    margin-bottom: 40px;
+}
+
+.featured-articles h1, .featured-videos h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #0044cc;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+/* Grid layout */
+.articles-grid, .videos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+article, .video {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
