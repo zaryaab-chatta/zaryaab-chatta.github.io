@@ -79,8 +79,7 @@ main {
 
 /* Footer */
 footer {
-    background-color: #0044cc;
-    background: linear-gradient(135deg, #0044cc, #007bff); /* Gradient to match header style */
+    background: linear-gradient(135deg,#007bff, #0044cc); /* Gradient to match header style */
     color: white;
     text-align: center;
     padding: 20px;
