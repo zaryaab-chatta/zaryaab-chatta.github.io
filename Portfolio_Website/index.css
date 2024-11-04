@@ -25,16 +25,17 @@
 /* Grid layout for featured articles and videos */
 .articles-grid, .videos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr); /* Three equally sized columns */
+    gap: 30px; /* Increase the gap for spacing */
 }
 
 article, .video {
     background: white;
-    padding: 15px;
-    border-radius: 8px;
+    padding: 20px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 0.3s ease; /* Slight animation on hover */
 }
 
 article img, .video img {
@@ -43,14 +44,14 @@ article img, .video img {
 }
 
 article h2, .video h2 {
-    font-size: 1.5em;
+    font-size: 1.8em; /* Increase font size for visibility */
     color: #0044cc;
-    margin: 10px 0;
-    font-family: 'Merriweather Sans', sans-serif; /* Sans-serif for article/video titles */
+    margin: 15px 0;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 article p, .video p {
-    font-size: 0.9em;
+    font-size: 1em;
     color: #333;
-    font-family: 'Merriweather', serif; /* Serif for paragraph text */
+    font-family: 'Merriweather', serif;
 }
