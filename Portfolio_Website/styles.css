@@ -106,6 +106,5 @@ footer .social-media a {
 }
 
 footer .social-media a:hover {
-    color: #007bff; /* Lighter blue on hover */
     transform: translateY(-3px); /* Raise slightly on hover */
 }
