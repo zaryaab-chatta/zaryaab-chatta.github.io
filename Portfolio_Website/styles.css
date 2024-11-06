@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-y: scroll; /* Ensures the scrollbar is always present */
+}
+
 /* Main Body Styling */
 html, body {
     height: 100%;
