@@ -1,0 +1,109 @@
+/* General Page Styles */
+body {
+    font-family: 'Merriweather', serif;
+    color: #333;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0044cc;
+    color: white;
+}
+
+header .logo img {
+    width: 80px;
+    height: auto;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Article Page Content */
+.article-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.article-page h1 {
+    font-size: 2.5em;
+    color: #0044cc;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Section Headings */
+.article-page h2 {
+    font-size: 2em;
+    color: #0044cc;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #0044cc;
+    padding-bottom: 5px;
+}
+
+/* Paragraph Styles */
+.article-page p {
+    font-size: 1em;
+    color: #333;
+    margin: 15px 0;
+}
+
+/* Bold text for sub-sections within paragraphs */
+.article-page p strong {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0044cc;
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .social-media {
+    margin-top: 10px;
+}
+
+footer .social-media a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
+}
