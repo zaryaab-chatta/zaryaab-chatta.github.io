@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Accessible Website</h1>
+    </header>
+
+    <main>
+        <!-- Audio/Video Section -->
+        <section>
+            <h2>Featured Audio</h2>
+            <audio controls>
+                <source src="audio/your-audio-file.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <p>Figure 1. Audio File (Your Name, Date). Captioned per APA 7th edition.</p>
+        </section>
+
+        <!-- Accessibility Buttons -->
+        <section>
+            <h2>Accessibility Options</h2>
+            <button onclick="increaseTextSize()">Increase Text Size</button>
+            <button onclick="toggleColorScheme()">Toggle Color Scheme</button>
+        </section>
+
+        <!-- Image Gallery with Alt Text Display -->
+        <section>
+            <h2>Image Gallery</h2>
+            <div class="image-gallery">
+                <div class="image-container">
+                    <img src="images/photo1.jpg" alt="A scenic view of mountains and a lake." onclick="showAltText('A scenic view of mountains and a lake.')">
+                    <p>Photo taken on 2024-11-01, Location: Rocky Mountains</p>
+                </div>
+                <div class="image-container">
+                    <img src="images/photo2.jpg" alt="City skyline at sunset." onclick="showAltText('City skyline at sunset.')">
+                    <p>Photo taken on 2024-11-02, Location: Downtown Toronto</p>
+                </div>
+                <div class="image-container">
+                    <img src="images/photo3.jpg" alt="A serene forest trail." onclick="showAltText('A serene forest trail.')">
+                    <p>Photo taken on 2024-11-03, Location: Blue Ridge Forest</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Accessible Website Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
