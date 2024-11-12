@@ -1,6 +1,6 @@
-// Function to increase text size
-function increaseTextSize() {
-    document.body.style.fontSize = '1.2em';
+// Function to toggle text size between normal and enlarged
+function toggleTextSize() {
+    document.body.classList.toggle('large-text');
 }
 
 // Function to toggle color scheme for colorblind mode

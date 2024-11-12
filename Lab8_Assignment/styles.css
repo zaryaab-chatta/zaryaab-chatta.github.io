@@ -1,8 +1,10 @@
+/* General body styling */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #ffffff;
     color: #333333;
+    font-size: 1em;
 }
 
 header, footer {
@@ -30,6 +32,11 @@ button {
     padding: 0.5em 1em;
     font-size: 1em;
     cursor: pointer;
+}
+
+/* Enlarged text size when the "large-text" class is applied */
+body.large-text {
+    font-size: 1.2em;
 }
 
 /* Dark mode for colorblind accessibility */
