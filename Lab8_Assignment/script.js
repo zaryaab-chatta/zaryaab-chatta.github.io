@@ -3,7 +3,7 @@ function toggleTextSize() {
     document.body.classList.toggle('large-text');
 }
 
-// Function to toggle color scheme for colorblind mode
+// Function to toggle the color scheme for colorblind mode
 function toggleColorScheme() {
     document.body.classList.toggle('dark-mode');
 }

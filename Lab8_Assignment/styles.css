@@ -34,7 +34,7 @@ button {
     cursor: pointer;
 }
 
-/* Enlarged text size when the "large-text" class is applied */
+/* Increases text size */
 body.large-text {
     font-size: 1.2em;
 }
