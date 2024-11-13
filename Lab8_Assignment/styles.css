@@ -34,22 +34,13 @@ button {
     cursor: pointer;
 }
 
-/* Colorblind-friendly dark mode with high contrast */
-.colorblind-mode {
-    background-color: #222;
+/* Enlarged text size when the "large-text" class is applied */
+body.large-text {
+    font-size: 1.2em;
+}
+
+/* Dark mode for colorblind accessibility */
+.dark-mode {
+    background-color: #1a1a1a;
     color: #eaeaea;
-}
-
-.colorblind-mode header, 
-.colorblind-mode footer {
-    background-color: #111;
-    color: #ffffff;
-}
-
-.colorblind-mode h2 {
-    color: #ffdd44; /* Yellow that is easily distinguishable */
-}
-
-.colorblind-mode .image-container p {
-    color: #ffdd44;
 }
