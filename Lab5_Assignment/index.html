@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Zaryaab Chatta Lab 5 Assignment</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header> 
+            <h1>Zaryaab Chatta: An Educational Timeline</h1> 
+            <p><strong>Author:</strong> Zaryaab Chatta</p>
+
+            <!-- Navigational Menu -->
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li class="nav-item" onmouseover="hoverNav(this)" onmouseout="unhoverNav(this)">
+                        <a href="elementary.html">Elementary</a>
+                    </li>
+                    <li class="nav-item" onmouseover="hoverNav(this)" onmouseout="unhoverNav(this)">
+                        <a href="highschool.html">High School</a>
+                    </li>
+                    <li class="nav-item" onmouseover="hoverNav(this)" onmouseout="unhoverNav(this)">
+                        <a href="university.html">University</a>
+                    </li>
+                    <li class="nav-item" onmouseover="hoverNav(this)" onmouseout="unhoverNav(this)">
+                        <a href="extracurriculars.html">Extra-Curriculars</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+
+        <main>
+            <h3>Zaryaab Chatta: Homepage</h3> 
+            <p> Hey and welcome to my Homepage! Here is what I look like. Click to get a closer look! <br>
+                <img id="clickable-image" src="ImageofSelf.jpeg" alt="Clickable" style="width: 300px; cursor: pointer;">
+                <br> Before you click on the tabs above to navigate my page, why dont you introduce yourself. 
+                What is your name? </p>
+
+            <!-- Button to trigger the prompt -->
+            <button onclick="promptForName()">Enter Name</button>
+            <!-- Element where the name will be displayed -->
+            <p id="displayName"></p>
+              
+            <p> Here are some other places I am on the internet!</p> <br>
+
+            <!-- Dropdown Menu -->
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Where you can find me</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <nav><a href= https://ca.linkedin.com/in/zaryaab-chatta-452070250 target= "_blank"> LinkedIn</a> </nav>
+                    <nav><a href= https://www.youtube.com/user/zaryaab7?app target= "_blank"> Youtube</a> </nav>
+                    <nav><a href= https://www.instagram.com/zaryaab_chatta/profilecard/?igsh target = "_blank"> Instagram</a> </nav>
+                </div>
+            </div>
+        </main>
+
+    <script src="script.js"> </script>
+    <hr>
+    </body>
+
+   <footer>
+    <nav>
+    <p><small>Contact: <a href= "mailto:zaryaab.chatta@torontomu.ca" > zaryaab.chatta@torontomu.ca</a> </small><p>
+    </nav>
+        <div><small>Copyright &copy; 2024 Zaryaab Chatta</small></div>
+    </footer>
+</html>

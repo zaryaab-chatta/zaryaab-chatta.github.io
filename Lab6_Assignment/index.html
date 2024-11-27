@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+  <!-- 
+        The “Submit” button stores the input data into local storage by collecting the values
+        from the form fields and saving them as an array in local storage. 
+        The “Clear” button resets all input fields in the form to their default values.
+    -->
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+        <!-- Contact form -->
+        <form id="contactForm">
+            <p>
+                <label for="name">Full Name:</label>
+                <input id="name" type="text" name="name" required>
+            </p>
+            <p>
+                <label for="email">Email Address:</label>
+                <input id="email" type="email" name="email" required>
+            </p>
+            <p>
+                <label for="phone">Phone Number:</label>
+                <input id="phone" type="tel" name="phone">
+            </p>
+            <p>
+                <label for="subject">Subject:</label>
+                <input id="subject" type="text" name="subject" required>
+            </p>
+            <p>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+            </p>
+            <p>
+                <label for="contact-method">Preferred Contact Method:</label>
+                <input type="radio" name="contact-method" value="email"> Email
+                <input type="radio" name="contact-method" value="phone"> Phone
+            </p>
+            <p>
+                <label for="reason">Reason for Contact:</label>
+                <select id="reason" name="reason">
+                    <option value="general">General Inquiry</option>
+                    <option value="job">Job Offer</option>
+                    <option value="other">Other</option>
+                </select>
+            </p>
+            <p>
+                <label for="newsletter">Subscribe to Portfolio Updates:</label>
+                <input type="checkbox" name="newsletter" value="yes"> Yes, I want to receive updates
+            </p>
+            <p>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear">
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <div><small>Copyright &copy; 2024 Zaryaab Chatta</small></div>
+    </footer>
+
+    <!-- Link both JavaScript files -->
+    <script src="formSubmit.js"></script>
+    <script src="formReset.js"></script>
+</body>
+</html>
