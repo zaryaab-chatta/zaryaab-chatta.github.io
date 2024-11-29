@@ -1,18 +1,15 @@
-main {
-    max-width: 800px;
-    margin: 40px auto;
-    text-align: center;
-}
 
-main h1 {
-    font-size: 2.5em;
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
     color: #0044cc;
-    font-family: 'Merriweather Sans', sans-serif;
-    margin-bottom: 20px;
+    font-family: 'Merriweather Sans', sans-serif; /* Sans-serif for section titles */
 }
 
-main p {
-    margin-bottom: 20px;
+p {
+    font-size: 1em;
+    color: #333;
+    font-family: 'Merriweather', serif;
 }
 
 
