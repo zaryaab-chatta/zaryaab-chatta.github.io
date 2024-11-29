@@ -7,15 +7,6 @@ body {
     padding: 20px;
 }
 
-/* Page Title Styling */
-h1.page-title {
-    font-size: 2.5em;
-    text-align: center;
-    color: #0044cc; /* Primary theme color */
-    font-family: 'Merriweather Sans', sans-serif;
-    margin-bottom: 30px;
-}
-
 /* Videos Section Styling */
 .videos-section {
     display: grid;
