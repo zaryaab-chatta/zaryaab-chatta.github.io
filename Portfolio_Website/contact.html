@@ -23,44 +23,33 @@
         </nav>
     </header>
 
-    <main>
-        <h1>Contact Us</h1>
-        <!-- Contact form -->
-        <form id="contactForm">
-            <p>
-                <label for="name">Full Name:</label>
-                <input id="name" type="text" name="name" required>
-            </p>
-            <p>
-                <label for="email">Email Address:</label>
-                <input id="email" type="email" name="email" required>
-            </p>
-            <p>
-                <label for="subject">Subject:</label>
-                <input id="subject" type="text" name="subject" required>
-            </p>
-            <p>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" cols="50" required></textarea>
-            </p>
-            <p>
-                <label for="reason">Reason for Contact:</label>
-                <select id="reason" name="reason">
-                    <option value="general">General Inquiry</option>
-                    <option value="job">Job Offer</option>
-                    <option value="other">Other</option>
-                </select>
-            </p>
-            <p>
-                <label for="newsletter">Subscribe to Portfolio Updates:</label>
-                <input type="checkbox" name="newsletter" value="yes"> Yes, I want to receive updates
-            </p>
-            <p>
-                <input type="submit" value="Submit">
-                <input type="reset" value="Clear">
-            </p>
-        </form>
-    </main>
+   <!-- Main Content -->
+   <main>
+    <h1>Contact Me</h1>
+    <p>If you have any questions, comments, or opportunities to discuss, feel free to contact me using the form below. I'll get back to you as soon as possible!</p>
+    <form id="contactForm" action="https://formspree.io/f/xdkopawz" method="POST">
+        <p>
+            <label for="name">Full Name:</label>
+            <input id="name" type="text" name="name" placeholder="Enter your name" required>
+        </p>
+        <p>
+            <label for="email">Email Address:</label>
+            <input id="email" type="email" name="email" placeholder="Enter your email" required>
+        </p>
+        <p>
+            <label for="subject">Subject:</label>
+            <input id="subject" type="text" name="_subject" placeholder="Subject of your message" required>
+        </p>
+        <p>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Write your message here" required></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+        </p>
+    </form>
+</main>
 
      <!-- Footer with Social Media Links -->
      <footer>

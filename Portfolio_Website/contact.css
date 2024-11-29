@@ -1,0 +1,132 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styling */
+body {
+    font-family: 'Merriweather', serif;
+    line-height: 1.6;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333;
+    padding: 20px;
+}
+
+/* Page Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #0044cc, #007bff);
+    color: white;
+}
+
+header .logo img {
+    max-width: 80px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+header nav ul li a.active {
+    font-weight: bold;
+    border-bottom: 2px solid white;
+}
+
+/* Page Main Content */
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 2.5em;
+    color: #0044cc;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin-bottom: 20px;
+}
+
+main p {
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form p {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    color: #0044cc;
+    margin-bottom: 5px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-bottom: 10px;
+    font-family: 'Merriweather', serif;
+}
+
+form input[type="submit"],
+form input[type="reset"] {
+    background: #0044cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Merriweather Sans', sans-serif;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover {
+    background: #007bff;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0044cc;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
