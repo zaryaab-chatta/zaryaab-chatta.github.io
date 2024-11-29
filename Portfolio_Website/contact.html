@@ -43,7 +43,7 @@
         </p>
         <p>
             <label for="subject">Subject:</label>
-            <input id="subject" type="text" name="_subject" placeholder="Subject of your message" required>
+            <input id="subject" type="text" name="subject" placeholder="Subject of your message" required>
         </p>
         <p>
             <label for="message">Message:</label>
@@ -54,6 +54,31 @@
             <input type="reset" value="Clear">
         </p>
     </form>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', async function (event) {
+            event.preventDefault(); // Prevent default form submission behavior
+            const form = event.target;
+    
+            // Send the form data to Formspree
+            const formData = new FormData(form);
+            const response = await fetch(form.action, {
+                method: form.method,
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+    
+            if (response.ok) {
+                // Redirect to the Thank You page after a successful submission
+                window.location.href = 'thank-you.html';
+            } else {
+                // Show an error message if submission fails
+                alert('There was an error submitting the form. Please try again.');
+            }
+        });
+    </script>
 </main>
 
      <!-- Footer with Social Media Links -->
