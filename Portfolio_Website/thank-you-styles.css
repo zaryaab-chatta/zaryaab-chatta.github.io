@@ -1,0 +1,17 @@
+/* Button Styling */
+.button {
+    display: inline-block;
+    background-color: #0044cc;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Merriweather Sans', sans-serif;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #007bff;
+    transform: translateY(-2px);
+}
+
