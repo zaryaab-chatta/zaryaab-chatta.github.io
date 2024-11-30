@@ -1,28 +1,29 @@
-// Handle form submission
-document.getElementById('contactForm').addEventListener('submit', async function (event) {
-    event.preventDefault(); // Prevent default form submission
-    const form = event.target;
+// This function handles form submission for the contact form
+document.getElementById("contactForm").onsubmit = function(event) {
+    // Prevent the form from refreshing the page
+    event.preventDefault();
 
-    // Prepare form data
-    const formData = new FormData(form);
+    // Retrieve previous submissions from localStorage (if any)
+    let submissions = JSON.parse(localStorage.getItem("submissions")) || [];
 
-    try {
-        // Send form data to Formspree
-        const response = await fetch("https://formspree.io/f/xdkopawz", {
-            method: "POST",
-            body: formData,
-            headers: {
-                'Accept': 'application/json',
-            },
-        });
+    // Get the current form values
+    const submission = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value,
+        contactMethod: document.querySelector('input[name="contact-method"]:checked') ? document.querySelector('input[name="contact-method"]:checked').value : '',
+        reason: document.getElementById("reason").value,
+        newsletter: document.querySelector('input[name="newsletter"]:checked') ? 'Yes' : 'No'
+    };
 
-        if (response.ok) {
-            // Redirect to the Thank You page
-            window.location.href = "https://zaryaab-chatta.github.io/Portfolio_Website/thank-you.html";
-        } else {
-            alert("There was an error submitting the form. Please try again.");
-        }
-    } catch (error) {
-        alert("An unexpected error occurred. Please try again.");
-    }
-});
+    // Add the new submission to the array
+    submissions.push(submission);
+
+    // Store the updated submissions array in localStorage
+    localStorage.setItem("submissions", JSON.stringify(submissions));
+
+    // Display a success message
+    alert("Thank you for contacting us! Your message has been stored.");
+};
