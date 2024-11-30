@@ -9,7 +9,6 @@ h1 {
 
 body p {
     font-size: 1em;
-    color: #333;
     font-family: 'Merriweather', serif;
 }
 
@@ -62,35 +61,4 @@ form input[type="submit"]:hover,
 form input[type="reset"]:hover {
     background: #007bff;
     transform: translateY(-2px);
-}
-
-/* Footer */
-footer {
-    background: linear-gradient(135deg,#007bff, #0044cc); /* Gradient to match header style */
-    color: white;
-    text-align: center;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-footer p {
-    font-size: 0.9em;
-}
-
-footer .social-media {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-footer .social-media a {
-    color: white;
-    font-size: 1.5em;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-footer .social-media a:hover {
-    transform: translateY(-3px); /* Raise slightly on hover */
 }
