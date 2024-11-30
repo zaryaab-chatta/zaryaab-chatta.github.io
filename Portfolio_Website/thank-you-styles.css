@@ -4,7 +4,7 @@
 main {
     text-align: center;
     margin: auto; /* Centers the content vertically and horizontally */
-    padding: 20px;
+    padding: 140px 20px 20px; /* Top padding matches header height */
     max-width: 800px;
 }
 
