@@ -30,7 +30,7 @@
     <p>If you have any questions, comments, or opportunities to discuss, feel free to contact me using the form below. I'll get back to you as soon as possible!</p>
     <br>
     
-    <form id="contactForm">
+    <form id="contactForm" action="https://formspree.io/f/xdkopawz" method="POST">
         <!-- Redirect to Thank You Page -->
         <input type="hidden" name="_next" value="https://zaryaab-chatta.github.io/Portfolio_Website/thank-you.html">
         <p>
@@ -55,6 +55,31 @@
         </p>
     </form>
 
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', async function (event) {
+            event.preventDefault(); // Prevent default form submission behavior
+            const form = event.target;
+    
+            // Send the form data to Formspree
+            const formData = new FormData(form);
+            const response = await fetch(form.action, {
+                method: form.method,
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+    
+            if (response.ok) {
+                // Redirect to the Thank You page after a successful submission
+                window.location.href = 'thank-you.html';
+            } else {
+                // Show an error message if submission fails
+                alert('There was an error submitting the form. Please try again.');
+            }
+        });
+    </script>
+
 </main>
 
      <!-- Footer with Social Media Links -->
@@ -68,9 +93,5 @@
             <a href= "https://www.youtube.com/user/zaryaab7?app" target= "_blank"> Youtube</a>
         </div>
     </footer>
-
-    <!-- Link to External JavaScript File -->
-    <script src="formSubmit.js"></script>
-
 </body>
 </html>
