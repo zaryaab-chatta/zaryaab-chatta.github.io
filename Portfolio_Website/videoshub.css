@@ -1,0 +1,63 @@
+h1 {
+    font-size: 3em;
+    color: #0044cc;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Videos Page Styles */
+.videos-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* Video Preview */
+.video-preview {
+    background-color: white;
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.video-preview:hover {
+    transform: translateY(-5px);
+}
+
+.video-preview h2 {
+    color: #0044cc;
+    font-size: 1.8em;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.video-preview p {
+    color: #333;
+    font-size: 1em;
+    margin: 15px 0;
+    font-family: 'Merriweather', serif;
+}
+
+/* Watch Video Button */
+.watch-video-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0044cc;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.watch-video-button:hover {
+    background-color: #007bff;
+    transform: translateY(-2px); /* Adds a slight lift on hover */
+}
