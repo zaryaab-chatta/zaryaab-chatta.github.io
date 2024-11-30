@@ -1,12 +1,6 @@
 /* Specific Styles for Thank You Page */
 
-/* Centering Main Content */
-main {
-    text-align: center;
-    margin: auto; /* Centers the content vertically and horizontally */
-    padding: 140px 20px 20px; /* Top padding matches header height */
-    max-width: 800px;
-}
+
 
 /* Thank You Message Styling */
 main h1 {
